@@ -1,0 +1,26 @@
+// Load Instagram Photos (ctrl shift i)
+#import 'library/communicator.js'
+
+function run() {
+	
+	if(selectionIsEmpty()) {
+		showDialog("Select one or more layers to replace with photos from Instagram.")
+		return
+	}
+	
+	var numLayers = [selection count],
+		maxSize = 100, 
+		layerFrame;
+	
+	var loop = [selection objectEnumerator]
+	while (layer = [loop nextObject]) {
+		layerFrame = getRect(layer)
+		maxSize = Math.max(layerFrame.width, maxSize)
+		maxSize = Math.max(layerFrame.height, maxSize)
+	}
+	
+	var commands = {numberOfLayers:numLayers, maxSize:maxSize}
+	sendJSONCommands(commands)
+}
+
+run()
