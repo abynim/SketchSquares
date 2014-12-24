@@ -105,3 +105,29 @@ function addBitmap(filePath, parent, name) {
 	}
 	return layer;
 }
+
+function setBitmapFill(layer, imagePath) {
+	var image = [[NSImage alloc] initWithContentsOfFile:imagePath]
+	
+	if(image) {
+		
+		if( [layer class] == MSShapeGroup ) {
+			
+			var fills = [[layer style] fills];
+				// disable existing fills
+				var loop = [[fills array] objectEnumerator]
+				while (existingFill = [loop nextObject]) {
+					[existingFill setIsEnabled:false]
+				}
+			
+				[fills addNewStylePart];
+				
+			var bmpFill = [fills lastObject],
+				fillCollection = [[bmpFill documentData] images]
+				
+				[bmpFill setFillType:4]
+				[bmpFill setPatternImage:image collection:fillCollection]
+				[bmpFill setPatternFillType:1]
+		}
+	}
+}

@@ -35,7 +35,7 @@ function sendJSONCommands(params) {
 	}
 }
 
-function populateImages(images) {
+function populateImages(images, replaceLayers) {
 	if(selectionIsEmpty()) {
 		showDialog("Nothing selected")
 		return
@@ -46,12 +46,25 @@ function populateImages(images) {
 		
 	var loop = [selection objectEnumerator]
 	while (layer = [loop nextObject]) {
-		targetFrame = getRect(layer)
-		bmpLayer = addBitmap(images[i], [layer parentGroup], "Instagram Photo "+(i+1))
-		setPosition(bmpLayer, targetFrame.x, targetFrame.y, true)
-		setSize(bmpLayer, targetFrame.width, targetFrame.height)
-		[bmpLayer select:true byExpandingSelection:(i!=0)]
-		removeLayer(layer)
-		i++
+		
+		if (i < images.length) {
+			
+			if (replaceLayers == true) {
+				targetFrame = getRect(layer)
+				bmpLayer = addBitmap(images[i], [layer parentGroup], "Instagram Photo "+(i+1))
+				setPosition(bmpLayer, targetFrame.x, targetFrame.y, true)
+				setSize(bmpLayer, targetFrame.width, targetFrame.height)
+				[bmpLayer select:true byExpandingSelection:(i!=0)]
+				removeLayer(layer)
+			} else {
+				setBitmapFill(layer, images[i])
+				[layer select:true byExpandingSelection:(i!=0)]
+			}
+			
+			i++
+			
+		} else {
+			break;
+		}
 	}
 }
