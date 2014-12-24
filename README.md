@@ -17,12 +17,12 @@ Download and unzip the contents of this repository into your plugins folder. If 
 
 1. In Sketch, select the layers that you want to replace with Instagram photos, then run the plugin.  
 	* _Note: First time you use the plugin, you'll be asked to login to Instagram. The plugin will remember you until you log out._  
-![Plugin Window](http://silverux.com/ig-auth/assets/sketchsquares-1.png)  
+![Plugin Window](http://silverux.com/ig-auth/assets/sketchsquares-1a.png)  
 2. Once you're logged in, select the source of the photos you want to use.  
-![Plugin Window - Sources](http://silverux.com/ig-auth/assets/sketchsquares-3.png)  
+![Plugin Window - Sources](http://silverux.com/ig-auth/assets/sketchsquares-3a.png)  
 3. You can choose to either replace selected layers with new Bitmap layers, or insert photos as pattern fills (useful for adding images to round shapes).  
 4. If you're using Sketch at work, you might want to log out of Instagram when you're done.  
-![Logout Menu](http://silverux.com/ig-auth/assets/sketchsquares-4.png)
+![Logout Menu](http://silverux.com/ig-auth/assets/sketchsquares-4a.png)
 
 ### Image sizes
 
@@ -30,7 +30,7 @@ Instagram makes photos available in three sizes.
 
 SketchSquares Plugin will guess the image size you want to load based on the size of the layers you've selected. You can change this using the size menu.
 
-![Plugin Window - Sizes](http://silverux.com/ig-auth/assets/sketchsquares-2.png)
+![Plugin Window - Sizes](http://silverux.com/ig-auth/assets/sketchsquares-2a.png)
 
 ### Shortcut
 
