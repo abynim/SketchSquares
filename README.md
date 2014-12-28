@@ -5,7 +5,7 @@ Replace layers in Sketch with photos from Instagram.
 
 ## Demo
 
-[![Video](https://i.vimeocdn.com/video/501080694.jpg?mw=960)](https://vimeo.com/115152380)  
+[![Video](https://i.vimeocdn.com/video/501558466.jpg?mw=1920)](https://vimeo.com/115152380)  
 [Watch on Vimeo](https://vimeo.com/115152380)
 
 
