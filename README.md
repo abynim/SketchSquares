@@ -41,9 +41,9 @@ Once you've installed the plugin you can trigger it using this shortcut: `contro
 
 Sketch 3.2.1
 
-## Bugs and Features
+## Bugs, Features and Feedback
 
-When you run into bugs, please create Issues here on GitHub. Ditto for feature requests!
+When you run into bugs, please create Issues here on GitHub. Ditto for feature requests. Or you can send me feedback via Twitter [@abynim](http://twitter.com/abynim).
 
 ## Inspiration and Credits
 
@@ -53,4 +53,4 @@ Making this plugin was possible only through all the tricks I've learned from th
 
 ---
 
-MIT License © Aby Nimbalkar. I'm on [Linked In](http://tw.linkedin.com/in/abynim/).
+MIT License © Aby Nimbalkar. I'm on [LinkedIn](http://tw.linkedin.com/in/abynim/), [Twitter](http://twitter.com/abynim) and obviously [Instagram](http://instagram.com/abynim).
