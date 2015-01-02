@@ -131,3 +131,10 @@ function setBitmapFill(layer, imagePath) {
 		}
 	}
 }
+
+function getJSONFromURL(url) {
+	var request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]],
+		response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil],
+		responseObj = [NSJSONSerialization JSONObjectWithData:response options:nil error:nil]
+	return responseObj
+}

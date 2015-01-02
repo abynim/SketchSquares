@@ -1,0 +1,3 @@
+#import 'library/communicator.js'
+var commands = {sendFeedback:true}
+sendJSONCommands(commands)

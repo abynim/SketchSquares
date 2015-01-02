@@ -10,7 +10,7 @@ function sendJSONCommands(params) {
 		appPath = folder + "/library/InstagramPlugin.app",
 		uniqueID = [[NSUUID UUID] UUIDString],
 		tempFolderPath = getTempFolderPath("temp-commands/"+uniqueID),
-		jsonPath = tempFolderPath + "/c.json",
+		jsonPath = tempFolderPath + "/c.igplugin",
 		bundlePath = [[NSBundle mainBundle] bundlePath],
 		appName = [[NSFileManager defaultManager] displayNameAtPath: bundlePath],
 		d = [NSMutableDictionary new],
@@ -20,6 +20,7 @@ function sendJSONCommands(params) {
 		val = params[key]
 		[d setValue:val forKey:key]
 	}
+	[d setValue:kPluginDomain forKey:"pluginDomain"]
 	[d setValue:sp forKey:"scriptPath"]
 	[d setValue:folder forKey:"scriptFolder"]
 	[d setValue:appName forKey:"appName"]

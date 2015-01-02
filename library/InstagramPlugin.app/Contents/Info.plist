@@ -11,7 +11,7 @@
 		<dict>
 			<key>CFBundleTypeExtensions</key>
 			<array>
-				<string>json</string>
+				<string>igplugin</string>
 			</array>
 			<key>CFBundleTypeIconFile</key>
 			<string>application.icns</string>
@@ -20,7 +20,7 @@
 				<string>application/json</string>
 			</array>
 			<key>CFBundleTypeName</key>
-			<string>JSON File</string>
+			<string>Instagram Plugin Launcher</string>
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>LSIsAppleDefaultForType</key>
@@ -42,7 +42,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>2</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -58,7 +58,7 @@
 	<key>DTXcodeBuild</key>
 	<string>6A2008a</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.10</string>
+	<string>10.9</string>
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>

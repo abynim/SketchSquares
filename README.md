@@ -36,6 +36,12 @@ SketchSquares Plugin will guess the image size you want to load based on the siz
 
 Once you've installed the plugin you can trigger it using this shortcut: `control` + `shift` + `i`. You can change this shortcut (if it clashes with other plugins you may be using) by editing the first line of the `Load Instagram Photos.sketchplugin` file.
 
+### Updates
+
+The SketchSquares Plugin will automatically check for updates when you run it, and will let you know when a new version is available for download. It will let you install the updated version directly from the plugin window.
+
+![Plugin Window - When an update is available](http://silverux.com/ig-auth/assets/sketchsquares-5a.png)
+
 
 ## Supported Versions
 
@@ -43,7 +49,11 @@ Sketch 3.2.1
 
 ## Bugs, Features and Feedback
 
-When you run into bugs, please create Issues here on GitHub. Ditto for feature requests. Or you can send me feedback via Twitter [@abynim](http://twitter.com/abynim).
+Please use the inbuilt Feedback Menu to report bugs, request new features or just send me general feedback. Bugs and feature requests sent via the Feedback form will get logged as Issues here on GitHub to make them easier to track.
+
+![Feedback Menu](http://silverux.com/ig-auth/assets/sketchsquares-6a.png)
+
+You can also send me feedback via Twitter [@abynim](http://twitter.com/abynim).
 
 ## Inspiration and Credits
 
