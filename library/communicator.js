@@ -7,10 +7,10 @@ function sendJSONCommands(params) {
 	
 	var sp = sketch.scriptPath,
 		folder = [sp stringByDeletingLastPathComponent],
-		appPath = folder + "/library/InstagramPlugin.app",
+		appPath = folder + "/library/SketchSquaresPlugin.app",
 		uniqueID = [[NSUUID UUID] UUIDString],
 		tempFolderPath = getTempFolderPath("temp-commands/"+uniqueID),
-		jsonPath = tempFolderPath + "/c.igplugin",
+		jsonPath = tempFolderPath + "/c.ssplugin",
 		bundlePath = [[NSBundle mainBundle] bundlePath],
 		appName = [[NSFileManager defaultManager] displayNameAtPath: bundlePath],
 		d = [NSMutableDictionary new],
