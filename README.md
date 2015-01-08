@@ -45,7 +45,7 @@ The SketchSquares Plugin will automatically check for updates when you run it, a
 
 ## Supported Versions
 
-Sketch 3.2.1
+Sketch 3.2.1 or later on OSX Yosemite.
 
 ## Bugs, Features and Feedback
 
