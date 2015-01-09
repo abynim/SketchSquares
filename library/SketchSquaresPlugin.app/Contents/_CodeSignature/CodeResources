@@ -4,11 +4,15 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/AppIcon.icns</key>
+		<data>
+		OcymOxqW2gmCyFQOBA67ItiJj6g=
+		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/ConfigWindow.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F/Rl6zD740itmU31dWe8d2/jrtc=
+			Z2ByYza+uNkxjvnR+jnHoOZwvL4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -17,7 +21,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7oBZLpYblkXylegpToYDbXlwAOs=
+			gMCyfX4YGtjJhWrMKwCAjEjRv4g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +30,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T78RP17hAKcD1Rz5ObjQqiCAy6E=
+			E0psHKbrpM6Sd1JElUmO/a8G9B8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,7 +39,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yQR+uCIjeiTd3P2240hlJWaj2P0=
+			++stTUhGjrnh7Jgy2OIgcdCwiR8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -44,7 +48,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x94Rmf/c27GodRd8+zYfwg+35GU=
+			nbZZRFd1Mx7PComSQLihPB4wn20=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,7 +57,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gT4kipnELBzjeQja1kf5dxmG78Q=
+			0O85J21V5PZBPS2aiqBLg0h50eM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -62,7 +66,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jtLQqKjISOWaney/bLnoa3t9qBc=
+			KQVHZXBw4F5HppaC+qD5cqy1op8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -71,7 +75,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kpZpzf1tzztyT1XfRlOlQ+H0E28=
+			c7AU1phK/78rHgIhVcAqtBQ6RVs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -80,7 +84,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UrrBFsp8II6Gmi2CLRF16TtZKn8=
+			N93Vvl+qAlZpZ2qe+gkv+cqCWPA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -89,7 +93,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KN6hamctCzJ9Yrf6qcVFAKwH7oM=
+			lxdse4nV39ODS/lr/XuohYJjffg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -98,7 +102,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O1EwYY/kD9d2IbiNybyibHRXcdo=
+			wzsPJMwJKSnDFn4DTGhP+SZEaSI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -107,11 +111,15 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+8dhqo7VuBsV7Hq8tDHlE+D0oyQ=
+			WyPgGWueAzwxH26xyZYKPKq80Ps=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/archived-expanded-entitlements.xcent</key>
+		<data>
+		1oWk7+nwRSFkklK5Pe5NyFPMuCQ=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -205,11 +213,15 @@
 			<key>requirement</key>
 			<string>anchor apple generic and identifier "com.apple.dt.runtime.swiftSecurity" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = S2UM97N3N3)</string>
 		</dict>
+		<key>Resources/AppIcon.icns</key>
+		<data>
+		OcymOxqW2gmCyFQOBA67ItiJj6g=
+		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/ConfigWindow.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			F/Rl6zD740itmU31dWe8d2/jrtc=
+			Z2ByYza+uNkxjvnR+jnHoOZwvL4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -218,7 +230,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7oBZLpYblkXylegpToYDbXlwAOs=
+			gMCyfX4YGtjJhWrMKwCAjEjRv4g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -227,7 +239,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T78RP17hAKcD1Rz5ObjQqiCAy6E=
+			E0psHKbrpM6Sd1JElUmO/a8G9B8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -236,7 +248,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yQR+uCIjeiTd3P2240hlJWaj2P0=
+			++stTUhGjrnh7Jgy2OIgcdCwiR8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -245,7 +257,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			x94Rmf/c27GodRd8+zYfwg+35GU=
+			nbZZRFd1Mx7PComSQLihPB4wn20=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -254,7 +266,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gT4kipnELBzjeQja1kf5dxmG78Q=
+			0O85J21V5PZBPS2aiqBLg0h50eM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -263,7 +275,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jtLQqKjISOWaney/bLnoa3t9qBc=
+			KQVHZXBw4F5HppaC+qD5cqy1op8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -272,7 +284,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kpZpzf1tzztyT1XfRlOlQ+H0E28=
+			c7AU1phK/78rHgIhVcAqtBQ6RVs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -281,7 +293,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UrrBFsp8II6Gmi2CLRF16TtZKn8=
+			N93Vvl+qAlZpZ2qe+gkv+cqCWPA=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -290,7 +302,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KN6hamctCzJ9Yrf6qcVFAKwH7oM=
+			lxdse4nV39ODS/lr/XuohYJjffg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -299,7 +311,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O1EwYY/kD9d2IbiNybyibHRXcdo=
+			wzsPJMwJKSnDFn4DTGhP+SZEaSI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -308,11 +320,15 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+8dhqo7VuBsV7Hq8tDHlE+D0oyQ=
+			WyPgGWueAzwxH26xyZYKPKq80Ps=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/archived-expanded-entitlements.xcent</key>
+		<data>
+		1oWk7+nwRSFkklK5Pe5NyFPMuCQ=
+		</data>
 	</dict>
 	<key>rules</key>
 	<dict>

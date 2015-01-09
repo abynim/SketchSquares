@@ -29,6 +29,8 @@
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>SketchSquaresPlugin</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.silverux.plugins.sketchsquares</string>
 	<key>CFBundleInfoDictionaryVersion</key>

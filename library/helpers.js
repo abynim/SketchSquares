@@ -1,11 +1,17 @@
 var currentPage = [doc currentPage],
 	currentArtboard = [[doc currentPage] currentArtboard],
-	stage = currentArtboard ? currentArtboard : currentPage
+	stage = currentArtboard ? currentArtboard : currentPage,
+	iconName = "icon_256x256.png";
 
 function showDialog (message, OKHandler) {
   var alert = [COSAlertWindow new];
   [alert setMessageText: kPluginName]
   [alert setInformativeText: message]
+  var scriptPath = sketch.scriptPath,
+  	  folder = [scriptPath stringByDeletingLastPathComponent],
+	  iconPath = folder + "/library/" + iconName,
+  	  icon = [[NSImage alloc] initByReferencingFile:iconPath]
+  [alert setIcon:icon]
   var responseCode = [alert runModal];	
   if(OKHandler != nil && responseCode == 0) OKHandler()
 }
