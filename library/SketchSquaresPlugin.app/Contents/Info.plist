@@ -30,7 +30,7 @@
 	<key>CFBundleExecutable</key>
 	<string>SketchSquaresPlugin</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.silverux.plugins.sketchsquares.SketchSquaresPlugin</string>
+	<string>com.silverux.plugins.sketchsquares</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
