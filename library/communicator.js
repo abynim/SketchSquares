@@ -43,7 +43,7 @@ function populateImages(images, replaceLayers) {
 	}
 	
 	var i = 0,
-		targetFrame, bmpLayer;
+		targetFrame, bmpLayer, layerName, imagePath;
 		
 	var loop = [selection objectEnumerator]
 	while (layer = [loop nextObject]) {
@@ -51,8 +51,10 @@ function populateImages(images, replaceLayers) {
 		if (i < images.length) {
 			
 			if (replaceLayers == true) {
+				imagePath = [NSString stringWithFormat:@"%@", images[i]]
+				layerName = imagePath.lastPathComponent().split("__")[0]
 				targetFrame = getRect(layer)
-				bmpLayer = addBitmap(images[i], [layer parentGroup], "Instagram Photo "+(i+1))
+				bmpLayer = addBitmap(imagePath, [layer parentGroup], "@"+layerName)
 				setPosition(bmpLayer, targetFrame.x, targetFrame.y, true)
 				setSize(bmpLayer, targetFrame.width, targetFrame.height)
 				[bmpLayer select:true byExpandingSelection:(i!=0)]

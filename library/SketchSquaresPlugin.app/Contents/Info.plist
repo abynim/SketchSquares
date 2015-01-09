@@ -29,8 +29,10 @@
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>SketchSquaresPlugin</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.silverux.plugins.sketchsquares.SketchSquaresPlugin</string>
+	<string>com.silverux.plugins.sketchsquares</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -42,7 +44,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>4</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
