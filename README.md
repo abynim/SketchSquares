@@ -1,3 +1,8 @@
+
+### SketchSquares has been updated to support the latest SketchPlugin format and has moved to [https://github.com/abynim/SketchSquares.sketchplugin](https://github.com/abynim/SketchSquares.sketchplugin). If you are using **Sketch 3.3** or above please use the [new version](https://github.com/abynim/SketchSquares.sketchplugin).
+
+---
+
 # SketchSquares
 
 Replace layers in Sketch with photos from Instagram.
