@@ -1,4 +1,4 @@
-#import 'library/helpers.js'
+@import 'library/helpers.js'
 
 var kPluginName = "SketchSquares Plugin",
 	kPluginDomain = "com.silverux.instagram-sketch-plugin"

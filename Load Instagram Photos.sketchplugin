@@ -1,5 +1,5 @@
 // Load Instagram Photos (ctrl shift i)
-#import 'library/communicator.js'
+@import 'library/communicator.js'
 
 function run() {
 	

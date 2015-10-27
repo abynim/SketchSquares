@@ -1,7 +1,10 @@
 var currentPage = [doc currentPage],
 	currentArtboard = [[doc currentPage] currentArtboard],
 	stage = currentArtboard ? currentArtboard : currentPage,
-	iconName = "icon_256x256.png";
+	iconName = "icon_256x256.png",
+	SKVersion3_3 = "3.3",
+	SKVersion3_4 = "3.4",
+	sketchVersion = getMajorVersion();
 
 function showDialog (message, OKHandler) {
   var alert = [COSAlertWindow new];
@@ -82,34 +85,53 @@ function setPosition(layer, x, y, absolute) {
 
 
 function addBitmap(filePath, parent, name) {
-	var parent = parent ? parent : stage,
-		layer = [MSBitmapLayer new];
-	
-	if(![parent documentData]) {
-		showDialog("Before adding a Bitmap, add its parent to the document.")
-		return
+
+	if (sketchVersion == SKVersion3_4) {
+		var parent = parent ? parent : stage;	
+		if(![parent documentData]) {
+			showDialog("Before adding a Bitmap, add its parent to the document.")
+			return
+		}
+		
+		var layer = [MSBitmapLayer bitmapLayerWithImageFromPath:filePath]
+		if(!name) name = "Bitmap"
+		[layer setName:name]
+		[parent addLayers:[layer]]
+
+		return layer
+
+	} 
+	else {
+		var parent = parent ? parent : stage,
+			layer = [MSBitmapLayer new];
+		
+		if(![parent documentData]) {
+			showDialog("Before adding a Bitmap, add its parent to the document.")
+			return
+		}
+		
+		if(!name) name = "Bitmap"
+		[layer setName:name]
+		[parent addLayers:[layer]]
+			
+		var image = [[NSImage alloc] initWithContentsOfFile:filePath]
+		if(image) {
+			var originalImageSize = [image size],
+				fills = [[layer style] fills];
+			
+			[layer setConstrainProportions:false]
+			[fills addNewStylePart]
+			[[fills firstObject] setIsEnabled:false]
+			[layer setRawImage:image convertColourspace:false collection:[[doc documentData] images]]
+			[[layer frame] setWidth:originalImageSize.width]
+			[[layer frame] setHeight:originalImageSize.height]
+			[layer setConstrainProportions:true]
+		} else {
+			showDialog("Image file could not be found!")
+		}
+		return layer;
 	}
 	
-	if(!name) name = "Bitmap"
-	[layer setName:name]
-	[parent addLayers:[layer]]
-		
-	var image = [[NSImage alloc] initWithContentsOfFile:filePath]
-	if(image) {
-		var originalImageSize = [image size],
-			fills = [[layer style] fills];
-		
-		[layer setConstrainProportions:false]
-		[fills addNewStylePart]
-		[[fills firstObject] setIsEnabled:false]
-		[layer setRawImage:image convertColourspace:false collection:[[doc documentData] images]]
-		[[layer frame] setWidth:originalImageSize.width]
-		[[layer frame] setHeight:originalImageSize.height]
-		[layer setConstrainProportions:true]
-	} else {
-		showDialog("Image file could not be found!")
-	}
-	return layer;
 }
 
 function setBitmapFill(layer, imagePath) {
@@ -143,4 +165,9 @@ function getJSONFromURL(url) {
 		response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil],
 		responseObj = [NSJSONSerialization JSONObjectWithData:response options:nil error:nil]
 	return responseObj
+}
+
+function getMajorVersion() {
+	const version = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+    return (version+"").substr(0, 3)
 }

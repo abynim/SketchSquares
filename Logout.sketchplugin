@@ -1,0 +1,3 @@
+#import 'library/communicator.js'
+var commands = {logout:true} 
+sendJSONCommands(commands)
