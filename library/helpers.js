@@ -103,7 +103,7 @@ function addBitmap(filePath, parent, name) {
 	} 
 	else {
 		var parent = parent ? parent : stage,
-			layer = [MSBitmapLayer new];
+			layer = [MSBitmapLayer bitmapLayerWithImageFromPath:filePath];
 		
 		if(![parent documentData]) {
 			showDialog("Before adding a Bitmap, add its parent to the document.")
@@ -114,17 +114,17 @@ function addBitmap(filePath, parent, name) {
 		[layer setName:name]
 		[parent addLayers:[layer]]
 			
-		var image = [[NSImage alloc] initWithContentsOfFile:filePath]
+		var data = [NSData dataWithContentsOfFile:filePath]
+		var image = [[MSImageData alloc] initWithData:data sha:nil]
+
 		if(image) {
-			var originalImageSize = [image size],
-				fills = [[layer style] fills];
-			
+
+			var fills = [[layer style] fills];
 			[layer setConstrainProportions:false]
 			[fills addNewStylePart]
 			[[fills firstObject] setIsEnabled:false]
-			[layer setRawImage:image convertColourspace:false collection:[[doc documentData] images]]
-			[[layer frame] setWidth:originalImageSize.width]
-			[[layer frame] setHeight:originalImageSize.height]
+			[[layer frame] setWidth:[[image image] size].width]
+			[[layer frame] setHeight:[[image image] size].height]
 			[layer setConstrainProportions:true]
 		} else {
 			showDialog("Image file could not be found!")
@@ -135,7 +135,8 @@ function addBitmap(filePath, parent, name) {
 }
 
 function setBitmapFill(layer, imagePath) {
-	var image = [[NSImage alloc] initWithContentsOfFile:imagePath]
+	var data = [NSData dataWithContentsOfFile:imagePath]
+	var image = [[MSImageData alloc] initWithData:data sha:nil]
 	
 	if(image) {
 		
@@ -154,7 +155,7 @@ function setBitmapFill(layer, imagePath) {
 				fillCollection = [[bmpFill documentData] images]
 				
 				[bmpFill setFillType:4]
-				[bmpFill setPatternImage:image collection:fillCollection]
+				[bmpFill setImage:image]
 				[bmpFill setPatternFillType:1]
 		}
 	}
